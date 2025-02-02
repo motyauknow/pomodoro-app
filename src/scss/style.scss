@@ -1,0 +1,74 @@
+@import 'variables.scss';
+@import 'reset.scss';
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: $main-pomodoro;
+    color: white;
+    transition: background-color 1s ease-in-out;
+    font-family: "Nunito", serif;
+}
+
+.btn {
+    padding: 15px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: $main-pomodoro;
+    transition: color 1s ease-in-out;
+    font-weight: 700;
+    font-size: 22px;
+    box-shadow: 0px 5px 10px 0px rgba(43, 42, 42, 0.5); 
+}
+
+.btn:active {
+    position: relative;
+    top: 3px;
+    box-shadow: inset 0px 5px 10px 0px rgba(43, 42, 42, 0.5); 
+}
+
+.timer-menu {
+    display: inline-flex;
+    column-gap: 40px;
+    font-weight: 300;
+}
+
+.selected {
+    background-color: #a44e4e;
+    transition: background-color 1s ease-in-out;
+}
+
+.timer-item {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#app {
+    max-width: 620px;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #c15c5c;
+    transition: background-color 1s ease-in-out;
+}
+
+#btn {
+    padding: 15px 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: $main-pomodoro;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+#counter {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 120px;
+}

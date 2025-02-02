@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/scss/style.scss" />
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <div id="app">
+      <ul class="timer-menu">
+        <li>
+          <button role="button" class="timer-item selected" id="pomodoro">Pomodoro</button>
+        </li>
+        <li>
+          <button role="button" class="timer-item" id="short-break">Short break</button>
+        </li>
+        <li>
+          <button role="button" class="timer-item" id="long-break">Long break</button>
+        </li>
+      </ul>
+
+      <div id="counter">25:00</div>
+
+      <button role="button" class="btn">START</button>
+      <!--<button role="button" id="stop">Stop</button>-->
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>
